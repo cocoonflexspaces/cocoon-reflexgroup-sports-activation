@@ -1,0 +1,1607 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" />
+<title>ReflexGroup NYC Venues</title>
+<meta name="description" content="Three NYC venue options for a 10-day sports-brand pop-up, April–May 2027 — Casa Panorama, Casa Luz and Casa Brutal. Prepared by Cocoon Flex Spaces for Jade Saad, ReflexGroup." />
+<link rel="icon" href="img/cocoon/mark-128.png" />
+<style>
+  /* ============================================================
+     COCOON BRAND TOKENS
+     Primary: #F54029 (Brilliance / terracotta) + #F5F2E8 (Natural / cream)
+     Accent:  #275453 (Clarity / deep teal), #000000 (Black)
+     Type:    Helvetica Neue — Bold for titles, Medium for headlines, Regular for body
+     ============================================================ */
+
+  :root {
+    --cream: #F5F2E8;
+    --cream-deep: #ECE7D6;
+    --cream-warm: #EFE9D7;
+    --terracotta: #F54029;
+    --terracotta-soft: #E8593F;
+    --terracotta-deep: #C8331E;
+    --teal: #275453;
+    --teal-soft: #355F5E;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A4A;
+    --ink-mute: #6B6B6B;
+    --rule: rgba(26,26,26,0.12);
+    --rule-soft: rgba(26,26,26,0.06);
+    --max: 1280px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--terracotta); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* TYPE SCALE */
+  .superhead {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11px;
+    color: var(--terracotta);
+  }
+  .title {
+    font-weight: 700;
+    font-size: clamp(40px, 7vw, 96px);
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .headline {
+    font-weight: 500;
+    font-size: clamp(24px, 3.2vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0 0 0.6em;
+  }
+  .lede {
+    font-weight: 400;
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0 0 1em;
+  }
+  .body { font-size: 17px; line-height: 1.6; }
+  .caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+  }
+  .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+  }
+
+  /* SECTION FRAME */
+  section {
+    padding: clamp(64px, 10vh, 140px) clamp(24px, 5vw, 80px);
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  section + section { border-top: 1px solid var(--rule); }
+  section.tight { padding-top: clamp(48px, 6vh, 80px); padding-bottom: clamp(48px, 6vh, 80px); }
+  section.full {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.full > .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+
+  .logomark { width: 28px; height: 28px; flex: 0 0 auto; }
+  .wordmark { height: 16px; width: auto; flex: 0 0 auto; }
+
+  /* TOP BAR */
+  .topbar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 50;
+    background: rgba(245, 242, 232, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 14px clamp(24px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .topbar-brand { display: flex; align-items: center; gap: 18px; font-size: 13px; }
+  .topbar-brand .cocoon { display: flex; align-items: center; gap: 10px; padding-right: 18px; }
+  .topbar-brand .divider { width: 1px; height: 22px; background: var(--rule); flex: 0 0 auto; }
+  .topbar-brand .partner {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink);
+  }
+  .topbar-meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .topbar-meta { display: none; }
+  }
+
+  /* COVER */
+  .cover {
+    position: relative;
+    background: var(--cream);
+    padding: 0;
+    max-width: none;
+    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 640px;
+  }
+  .cover-text {
+    padding: clamp(40px, 6vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    background: var(--cream);
+  }
+  .cover-image {
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cover-meta {
+    display: grid;
+    gap: 6px;
+    margin-top: 32px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+  .cover-meta strong { color: var(--ink); font-weight: 600; }
+
+  /* TWO-COL */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+  .two-col.media-first { grid-template-columns: 1.4fr 1fr; }
+  .two-col.balanced { grid-template-columns: 1fr 1fr; }
+
+  /* PHOTO CARDS / FRAMES */
+  .photo {
+    background: var(--cream-deep);
+    overflow: hidden;
+    position: relative;
+  }
+  .photo img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: transform 600ms ease;
+  }
+  .photo.tall img { aspect-ratio: 3/4; }
+  .photo.square img { aspect-ratio: 1/1; }
+  .photo.wide img { aspect-ratio: 16/9; }
+
+  .photo-grid { display: grid; gap: 18px; }
+  .photo-grid.two { grid-template-columns: 1fr 1fr; }
+  .photo-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .photo-grid.four { grid-template-columns: repeat(4, 1fr); }
+
+  .photo-grid.editorial {
+    grid-template-columns: 1.6fr 1fr;
+    gap: 18px;
+  }
+  .photo-grid.editorial .photo { height: 100%; }
+  .photo-grid.editorial .photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  .photo-grid.editorial .photo:first-child img { aspect-ratio: 4/5; }
+
+  /* QUAD MOSAIC — 1 featured + 3 stacked
+     The grid carries its own aspect-ratio so the layout sizes the same
+     whether real images, placeholders, or a mix render inside. */
+  .photo-grid.quad {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 18px;
+    aspect-ratio: 16/11;
+    max-height: 720px;
+  }
+  .photo-grid.quad > :nth-child(1) { grid-row: 1 / 4; }
+  .photo-grid.quad .photo { height: 100%; min-height: 0; overflow: hidden; }
+  .photo-grid.quad .photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  /* Placeholders injected into a quad cell — collapse to fill the cell
+     rather than stretching to their content. */
+  .photo-grid.quad .photo .placeholder-frame {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto !important;
+    padding: 20px 16px;
+    min-height: 0;
+    gap: 6px;
+  }
+  .photo-grid.quad .photo .placeholder-frame .ph-label { font-size: 10px; }
+  .photo-grid.quad .photo .placeholder-frame .ph-text { font-size: 12px; line-height: 1.4; }
+  @media (max-width: 900px) {
+    .photo-grid.quad {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      aspect-ratio: auto;
+      max-height: none;
+    }
+    .photo-grid.quad > :nth-child(1) {
+      grid-row: 1;
+      grid-column: 1 / 3;
+    }
+    .photo-grid.quad .photo img { aspect-ratio: 3/2; }
+    .photo-grid.quad .photo .placeholder-frame { aspect-ratio: 3/2 !important; }
+  }
+
+  /* Floor-labelled tile — small caption inside the photo frame */
+  .photo .floor-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(26,26,26,0.78);
+    color: var(--cream);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  /* OPTION HEADER — venue sections */
+  .option-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items: end;
+    margin-bottom: 28px;
+  }
+  .option-num {
+    font-size: clamp(64px, 8vw, 110px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .option-title {
+    font-size: clamp(28px, 3.4vw, 44px);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .option-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  /* PRICING TABLE — line-item breakdown */
+  .breakdown {
+    background: #FFF;
+    border: 1px solid var(--rule);
+    padding: 0;
+    margin-top: 32px;
+  }
+  .breakdown table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .breakdown th, .breakdown td {
+    padding: 14px 24px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .breakdown th {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    background: var(--cream-warm);
+  }
+  .breakdown td.amount, .breakdown th.amount { text-align: right; font-variant-numeric: tabular-nums; }
+  .breakdown td.qty { text-align: center; color: var(--ink-soft); width: 60px; font-variant-numeric: tabular-nums; }
+  .breakdown tr.subtotal td {
+    background: var(--cream-warm);
+    font-weight: 700;
+    border-top: 2px solid var(--ink);
+    font-size: 15px;
+  }
+  .breakdown tr.subtle td { color: var(--ink-soft); font-size: 13px; }
+  .breakdown tr.total td {
+    background: var(--terracotta);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .breakdown tr.total td .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; display: block; opacity: 0.85; font-weight: 700; margin-bottom: 2px; }
+  @media (max-width: 600px) {
+    .breakdown th, .breakdown td { padding: 10px 14px; }
+  }
+
+  /* CALLOUT BAR */
+  .callout {
+    background: var(--terracotta);
+    color: #FFF;
+    padding: clamp(40px, 6vw, 80px);
+    margin: 0;
+    max-width: none;
+  }
+  .callout .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+  .callout .title { color: #FFF; }
+  .callout .superhead { color: rgba(255,255,255,0.88); }
+  .callout .lede { color: rgba(255,255,255,0.92); }
+
+  /* DIVIDER LABEL */
+  .divider-label {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+    margin: 0 0 32px;
+  }
+  .divider-label .text {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .divider-label .line {
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* SIMPLE STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .stat .num {
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--terracotta);
+  }
+  .stat .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* NOTE BOX */
+  .note {
+    background: #FFF;
+    border-left: 3px solid var(--terracotta);
+    padding: 32px 36px;
+    margin: 32px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .note p { margin: 0 0 14px; }
+  .note p:last-child { margin-bottom: 0; }
+  .note .signature {
+    margin-top: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+
+  /* PILL CTA */
+  .cta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: var(--ink);
+    color: var(--cream);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background 200ms ease;
+    white-space: nowrap;
+  }
+  .cta-pill:hover { background: var(--terracotta); text-decoration: none; }
+  .cta-pill.terracotta { background: var(--terracotta); color: #FFF; }
+  .cta-pill.terracotta:hover { background: var(--ink); }
+
+  /* WALKTHROUGH STEPS — used for "at a glance" comparison + next steps */
+  .walk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .walk .step {
+    border-top: 2px solid var(--terracotta);
+    padding-top: 24px;
+  }
+  .walk .step-num {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--terracotta);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .walk .step h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .walk.aligned .step {
+    display: flex;
+    flex-direction: column;
+  }
+  .walk.aligned .step h4 {
+    line-height: 1.2 !important;
+    min-height: 2.4em;
+    margin: 0 0 14px;
+    display: block;
+  }
+  .walk.aligned .step .step-body {
+    flex: 1 1 auto;
+    margin: 0 0 18px;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .walk.aligned .step .step-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--terracotta);
+    letter-spacing: -0.02em;
+    margin-top: auto;
+    line-height: 1;
+  }
+  .walk.aligned .step .step-price .sub {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-mute);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  .walk .step p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  /* PLACEHOLDER FRAME — defensive fallback for any image that fails to load */
+  .placeholder-frame {
+    background: var(--cream-deep);
+    border: 1px dashed rgba(26,26,26,0.18);
+    padding: 24px 18px;
+    text-align: center;
+    color: var(--ink-soft);
+    aspect-ratio: 3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .placeholder-frame .ph-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .placeholder-frame .ph-text { font-size: 12px; max-width: 320px; line-height: 1.4; }
+  .placeholder-frame.tall { aspect-ratio: 3/4; }
+  /* Universal: any placeholder inside any photo-grid cell shrinks to fit */
+  .photo-grid .photo .placeholder-frame {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2 !important;
+    min-height: 0;
+  }
+
+  /* "EMERGING" CARD — for venue D */
+  .emerging-card {
+    background: var(--cream-deep);
+    border: 1px solid var(--rule);
+    padding: clamp(40px, 5vw, 64px);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: clamp(24px, 4vw, 48px);
+    align-items: center;
+  }
+  .emerging-card .num {
+    font-size: clamp(56px, 7vw, 96px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .emerging-card .tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .emerging-card .text h3 {
+    margin: 0 0 12px;
+    font-size: clamp(22px, 2.4vw, 30px);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+  }
+  .emerging-card .text p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+    max-width: 640px;
+  }
+  .emerging-card .status {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    color: var(--terracotta);
+    border: 1px solid var(--terracotta);
+    padding: 10px 14px;
+    white-space: nowrap;
+  }
+  @media (max-width: 700px) {
+    .emerging-card { grid-template-columns: 1fr; text-align: left; }
+    .emerging-card .status { justify-self: start; }
+  }
+
+  /* EXPANSION SIDEBAR — used inside Venue A for "more floors available" */
+  .expansion {
+    background: var(--cream-warm);
+    border-left: 3px solid var(--terracotta);
+    padding: 28px 32px;
+    margin-top: 32px;
+  }
+  .expansion .tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 10px;
+  }
+  .expansion h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .expansion p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  /* TEAL CALLOUT — for services note */
+  .callout.teal {
+    background: var(--teal);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 60px clamp(24px, 5vw, 80px);
+    border-top: 1px solid var(--rule);
+    background: var(--cream);
+    color: var(--ink-soft);
+  }
+  footer .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  footer .sig { font-weight: 600; color: var(--ink); font-size: 14px; }
+  footer .meta { font-size: 12px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .cover-grid { grid-template-columns: 1fr; min-height: auto; }
+    .cover-image { height: 50vh; }
+    .two-col, .two-col.media-first, .two-col.balanced { grid-template-columns: 1fr; gap: 32px; }
+    .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr 1fr; }
+    .walk { grid-template-columns: 1fr; gap: 28px; }
+  }
+  @media (max-width: 600px) {
+    .photo-grid.two, .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr; }
+    section { padding: 56px 20px; }
+    .topbar-inner { padding: 14px 20px; }
+  }
+
+  @media print {
+    .topbar { display: none; }
+    section { page-break-inside: avoid; }
+  }
+
+  /* LIGHTBOX — fullscreen viewer for venue photos */
+  section[data-lightbox] .photo { cursor: zoom-in; }
+  section[data-lightbox] .photo img { transition: transform 500ms ease, filter 300ms ease; }
+  section[data-lightbox] .photo:hover img { transform: scale(1.03); filter: brightness(1.04); }
+
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.94);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(20px, 5vw, 56px);
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+  .lightbox.open { display: flex; opacity: 1; }
+  .lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    transform: scale(0.96);
+    transition: transform 300ms cubic-bezier(.2, .8, .2, 1);
+  }
+  .lightbox.open img { transform: scale(1); }
+  .lightbox-close {
+    position: fixed;
+    top: 22px;
+    right: 26px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 50%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 200ms ease;
+  }
+  .lightbox-close:hover { background: rgba(255, 255, 255, 0.18); }
+  .lightbox-caption {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+  }
+
+  /* ============================================================
+     ADDITIONS — Experiential proposal
+     ============================================================ */
+  .casa-num {
+    font-size: clamp(64px, 8vw, 110px); font-weight: 700; line-height: 0.8;
+    color: var(--terracotta); letter-spacing: -0.04em;
+  }
+  .casa-header { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: end; margin-bottom: 36px; }
+  .casa-header h2 { font-size: clamp(34px, 4.4vw, 60px); line-height: 1.02; letter-spacing: -0.025em; margin: 0; font-weight: 700; }
+  .casa-header .tag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-soft); font-weight: 700; margin-bottom: 8px; }
+  @media (max-width: 600px) { .casa-header { grid-template-columns: 1fr; gap: 10px; } }
+
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 32px 0 0; }
+  .facts > div { background: #FFF; padding: 18px 20px; }
+  .facts .k { font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-mute); font-weight: 700; }
+  .facts .v { font-size: 16px; font-weight: 600; margin-top: 6px; line-height: 1.3; }
+  @media (max-width: 900px) { .facts { grid-template-columns: 1fr 1fr; } }
+
+  /* GALLERY + TABS */
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 40px 0 18px; }
+  .tab {
+    border: 1px solid var(--ink); background: transparent; color: var(--ink);
+    padding: 9px 16px; border-radius: 100px; font: inherit; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;
+  }
+  .tab[aria-selected="true"] { background: var(--ink); color: var(--cream); }
+  .tab:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 2px; }
+  .gallery { display: none; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .gallery.active { display: grid; }
+  .gallery .photo img { aspect-ratio: 1/1; }
+  .gallery .photo.feature { grid-column: span 2; grid-row: span 2; }
+  .gallery .photo figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 12px 10px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.55)); color: #FFF;
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
+  }
+  .gallery-note { font-size: 13px; color: var(--ink-soft); margin: 0 0 18px; max-width: 760px; }
+  .gallery-note strong { color: var(--ink); }
+  @media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+
+  /* CALENDAR STRIP */
+  .cal { display: grid; gap: 8px; margin-top: 18px; }
+  .cal.days-5 { grid-template-columns: repeat(5, 1fr); }
+  .cal.days-6 { grid-template-columns: repeat(6, 1fr); }
+  .cal.days-7 { grid-template-columns: repeat(7, 1fr); }
+  .cal.days-8 { grid-template-columns: repeat(8, 1fr); }
+  .cal .d { background: #FFF; border: 1px solid var(--rule); padding: 12px 12px 14px; border-top: 3px solid var(--ink-mute); min-width: 0; }
+  .cal .d.live { border-top-color: var(--terracotta); }
+  .cal .d.cocoon { border-top-color: var(--teal); background: #F3F6F5; }
+  .cal .d .dow { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); font-weight: 700; }
+  .cal .d .date { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; margin-top: 2px; }
+  .cal .d .what { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 10px; }
+  .cal .d.live .what { color: var(--terracotta); }
+  .cal .d.cocoon .what { color: var(--teal); }
+  .cal .d .desc { font-size: 12px; color: var(--ink-soft); line-height: 1.4; margin-top: 4px; }
+  @media (max-width: 900px) {
+    .cal.days-5, .cal.days-6, .cal.days-7, .cal.days-8 { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* OPTION TOGGLE (A/B) */
+  .opt-toggle { display: inline-flex; border: 1px solid var(--ink); border-radius: 100px; padding: 3px; gap: 3px; margin-top: 8px; }
+  .opt-toggle button {
+    border: 0; background: transparent; font: inherit; font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; padding: 8px 16px; border-radius: 100px; cursor: pointer; color: var(--ink);
+  }
+  .opt-toggle button[aria-pressed="true"] { background: var(--terracotta); color: #FFF; }
+  .opt-panel { display: none; }
+  .opt-panel.active { display: block; }
+
+  .pending { display: inline-block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700;
+    color: var(--terracotta); border: 1px solid var(--terracotta); padding: 4px 8px; white-space: nowrap; }
+  .breakdown td .sub { display: block; font-size: 12px; color: var(--ink-mute); margin-top: 2px; }
+  .breakdown tr.pending-row td { background: #FFF7F5; }
+  .breakdown tr.total td .plus { font-size: 12px; font-weight: 600; opacity: 0.9; display: block; margin-top: 4px; letter-spacing: 0; }
+  .breakdown .scroll { overflow-x: auto; }
+
+  /* COMPARE CARDS */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+  .ccard { background: #FFF; border: 1px solid var(--rule); display: flex; flex-direction: column; }
+  .ccard .photo img { aspect-ratio: 16/10; }
+  .ccard .body { padding: 28px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+  .ccard h3 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+  .ccard .where { font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-soft); font-weight: 700; }
+  .ccard ul { margin: 0; padding-left: 18px; color: var(--ink-soft); font-size: 15px; line-height: 1.5; }
+  .ccard .prices { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: auto; padding-top: 18px; border-top: 1px solid var(--rule); }
+  .ccard .prices .k { font-size: 10px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--ink-mute); font-weight: 700; }
+  .ccard .prices .v { font-size: 24px; font-weight: 700; color: var(--terracotta); letter-spacing: -0.02em; line-height: 1.1; margin-top: 4px; }
+  .ccard .prices .n { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+  @media (max-width: 900px) { .compare { grid-template-columns: 1fr; } }
+
+  /* Q&A MATRIX */
+  .matrix { width: 100%; border-collapse: collapse; background: #FFF; border: 1px solid var(--rule); font-size: 14px; }
+  .matrix th, .matrix td { padding: 18px 20px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule-soft); }
+  .matrix thead th { background: var(--ink); color: var(--cream); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; }
+  .matrix tbody th { width: 22%; font-weight: 700; font-size: 14px; }
+  .matrix tbody th .n { display: block; color: var(--terracotta); font-size: 11px; letter-spacing: 0.16em; margin-bottom: 4px; }
+  .matrix td { color: var(--ink-soft); line-height: 1.55; width: 39%; }
+  .matrix td strong { color: var(--ink); }
+  .matrix-wrap { overflow-x: auto; margin-top: 40px; }
+  @media (max-width: 800px) {
+    .matrix thead { display: none; }
+    .matrix, .matrix tbody, .matrix tr, .matrix th, .matrix td { display: block; width: 100%; }
+    .matrix tr { border-bottom: 2px solid var(--rule); }
+    .matrix td::before { content: attr(data-casa); display: block; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terracotta); font-weight: 700; margin-bottom: 4px; }
+  }
+
+  /* DOWNLOADS */
+  .dl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+  .dl { background: #FFF; border: 1px solid var(--rule); padding: 24px; display: flex; flex-direction: column; gap: 10px; color: var(--ink); text-decoration: none; transition: border-color 200ms ease, transform 200ms ease; }
+  .dl:hover { border-color: var(--terracotta); text-decoration: none; transform: translateY(-2px); }
+  .dl .k { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--terracotta); }
+  .dl .t { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+  .dl .s { font-size: 13px; color: var(--ink-soft); }
+  .dl .go { margin-top: auto; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .dl.primary { background: var(--terracotta); color: #FFF; border-color: var(--terracotta); }
+  .dl.primary .k, .dl.primary .s { color: rgba(255,255,255,0.9); }
+  @media (max-width: 900px) { .dl-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .dl-grid { grid-template-columns: 1fr; } }
+
+  .plan-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .plan-list li { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--rule-soft); font-size: 15px; }
+  .plan-list li .lvl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; font-weight: 700; color: var(--terracotta); padding-top: 3px; }
+  .plan-list li .lvl.boh { color: var(--teal); }
+  .plan-list li span.d { color: var(--ink-soft); }
+  @media (max-width: 520px) { .plan-list li { grid-template-columns: 1fr; gap: 4px; } }
+
+  .lightbox-nav { position: fixed; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border: 0; border-radius: 50%;
+    background: rgba(255,255,255,0.10); color: #FFF; font-size: 26px; cursor: pointer; }
+  .lightbox-nav:hover { background: rgba(255,255,255,0.2); }
+  .lightbox-nav.prev { left: 18px; } .lightbox-nav.next { right: 18px; }
+
+  section { scroll-margin-top: 70px; }
+  @media (max-width: 600px) {
+    .breakdown th:nth-child(3), .breakdown td:nth-child(3) { display: none; }
+    .breakdown td.qty { width: 36px; }
+    .opt-toggle button { padding: 7px 12px; }
+    .divider-label { grid-template-columns: 1fr auto; }
+    .divider-label .line { display: none; }
+  }
+  @media (max-width: 520px) {
+    .cta-pill { white-space: normal; text-align: center; }
+    .pending { white-space: normal; }
+    .breakdown table { font-size: 13px; }
+    .breakdown th, .breakdown td { padding: 10px 10px; }
+  }
+  @media (max-width: 800px) {
+    .matrix tbody th, .matrix td { width: 100% !important; }
+    .matrix tbody th { background: var(--cream-warm); }
+  }
+  @media (max-width: 600px) {
+    .breakdown table { table-layout: fixed; }
+    .breakdown th:nth-child(1) { width: 62%; }
+    .breakdown th.qty { width: 12%; }
+    .breakdown th:nth-child(4) { width: 26%; }
+    .breakdown td.amount { word-break: break-word; }
+  }
+  @media (max-width: 600px) { .pending { letter-spacing: 0.06em; padding: 3px 5px; } }
+
+  .cal.days-11, .cal.days-12 { grid-template-columns: repeat(6, 1fr); }
+  @media (max-width: 900px) { .cal.days-11, .cal.days-12 { grid-template-columns: repeat(2, 1fr); } }
+  #joy-boh.gallery { grid-template-columns: repeat(2, 1fr); }
+  #joy-boh .photo img { aspect-ratio: 3/2; }
+
+</style>
+</head><body>
+<style>
+  .req { display:inline-block; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; font-weight:700; padding:3px 7px; margin-right:6px; }
+  .req.yes { background:#E6EFEE; color:var(--teal); }
+  .req.part { background:#FBEBE7; color:var(--terracotta-deep); }
+  .req.tbc { background:var(--cream-deep); color:var(--ink-soft); }
+  .wild { display:inline-block; font-size:10px; letter-spacing:0.16em; text-transform:uppercase; font-weight:700; color:var(--teal); border:1px solid var(--teal); padding:4px 8px; margin-left:10px; vertical-align:middle; }
+  .per-day { font-size: 13px; color: var(--ink-soft); margin-top: 8px; font-weight: 600; }
+  .walk.two { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 900px) { .walk.two { grid-template-columns: 1fr; } }
+  .compare.three { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 1100px) { .compare.three { grid-template-columns: 1fr; } }
+  .ccard .prices.one { grid-template-columns: 1fr; }
+  .plan-img { background:#FFF; border:1px solid var(--rule); padding:12px; }
+  .gallery.plans { grid-template-columns: repeat(2, 1fr); }
+  .gallery.plans .photo img { aspect-ratio: 4/3; object-fit: contain; background:#FFF; }
+  @media (min-width: 801px) { .matrix td { width: 26% !important; } .matrix tbody th { width: 22% !important; } }
+  .gallery.g3 { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 900px) { .gallery.g3 { grid-template-columns: repeat(2, 1fr); } }
+  .area { margin-top: 56px; }
+  .area-head { display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap; margin-bottom:16px; }
+  .area-head .eyebrow { margin:0; }
+  .area-head p { margin:0; font-size:14px; color:var(--ink-soft); max-width:620px; }
+  .gallery.area-grid { display:grid; grid-template-columns: 1.4fr 1fr 1fr; grid-auto-rows: 240px; gap:12px; }
+  .gallery.area-grid .photo img { width:100%; height:100%; aspect-ratio:auto; object-fit:cover; }
+  .gallery.area-grid .photo.tallcell { grid-row: span 2; }
+  @media (max-width: 900px) { .gallery.area-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; } .gallery.area-grid .photo.tallcell { grid-row: span 1; } }
+  .gallery.area-grid.four { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 320px; }
+  @media (max-width: 900px) { .gallery.area-grid.four { grid-template-columns: 1fr 1fr; grid-auto-rows: 220px; } }
+  .cover-image .cover-cap { position:absolute; left:0; right:0; bottom:0; padding:28px 20px 14px; background:linear-gradient(transparent, rgba(0,0,0,0.6)); color:#FFF; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; font-weight:700; }
+  .addon-price { font-size: 44px; font-weight:700; color: var(--terracotta); letter-spacing:-0.02em; line-height:1; margin-top:auto; }
+  .addon-price .u { font-size: 16px; font-weight:600; color: var(--ink-soft); letter-spacing:0; margin-left:4px; }
+  .walk .step p.small-ref, .small-ref { font-size:12px; color: var(--ink-mute); margin-top:12px; line-height:1.5; }
+  .budget-note { background:#FFF; border-left:3px solid var(--teal); padding:28px 32px; margin-top:40px; font-size:16px; line-height:1.6; }
+  .budget-note p { margin:0 0 12px; } .budget-note p:last-child { margin:0; }
+</style>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-brand">
+      <span class="cocoon">
+        <img src="img/cocoon/mark-128.png" alt="Cocoon" class="logomark" />
+        <img src="img/cocoon/wordmark-320.png" alt="cocoon" class="wordmark" />
+      </span>
+      <span class="divider" aria-hidden="true"></span>
+      <span class="partner">ReflexGroup <span style="color: var(--ink-soft); font-weight: 400;">· NYC brand pop-up</span></span>
+    </div>
+    <div class="topbar-meta">Venue options · 10 days · April–May 2027</div>
+  </div>
+</header>
+
+<!-- COVER -->
+<section class="cover full">
+  <div class="cover-grid">
+    <div class="cover-text">
+      <div>
+        <div style="display: inline-flex; align-items: center; gap: 10px; background: var(--terracotta); color: #FFF; padding: 8px 16px; border-radius: 100px; font-size: 11px; letter-spacing: 0.18em; font-weight: 700; text-transform: uppercase;">
+          <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #FFF;"></span>
+          Venue options · three directions
+        </div>
+        <h1 class="title" style="margin-top:24px;">Ten days in<br/>New York.<br/><span style="color:var(--terracotta)">Spring 2027.</span></h1>
+        <p class="lede" style="margin-top:32px; max-width: 540px;">Three blank-canvas venues for the brand's second-year pop-up: a street-level Broadway flagship at Casa Panorama, a whole SoHo building at Casa Luz, and a street-level art centre at Casa Brutal in Williamsburg. Each one has room for the café, retail, kitchen, programming and back-of-house. We're sourcing more options, and these are the three to walk first.</p>
+        <div style="display:flex; gap: 12px; flex-wrap: wrap; margin-top: 28px;">
+          <a href="#compare" class="cta-pill terracotta">Compare the three ↓</a>
+          <a href="#fit" class="cta-pill">How each fits your brief</a>
+        </div>
+      </div>
+      <div class="cover-meta">
+        <div><strong>Prepared for</strong> &nbsp;Jade Saad · Lucas Villett · ReflexGroup</div>
+        <div><strong>Programme</strong> &nbsp;10-day brand pop-up · load-in, live run, load-out</div>
+        <div><strong>Window</strong> &nbsp;Last two weeks of April · first two weeks of May 2027</div>
+        <div><strong>Venues</strong> &nbsp;Casa Panorama · Casa Luz · Casa Brutal</div>
+        <div><strong>Prepared by</strong> &nbsp;Eduard Monteagudo · Andrés Tovar · Cocoon Flex Spaces</div>
+        <div><strong>Date</strong> &nbsp;September 30, 2026</div>
+      </div>
+    </div>
+    <div class="cover-image">
+      <img src="img/luz/facade-street.jpg" alt="Casa Luz — cast-iron façade on Howard Street, SoHo" />
+      <div class="cover-cap">Exterior · the Casa Luz building on Howard Street, SoHo</div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTE -->
+<section id="note">
+  <div class="two-col">
+    <div>
+      <div class="superhead">A note from Cocoon</div>
+      <h2 class="headline" style="margin-top:14px;">Jade, Lucas — thank you for the time last week. Here are the venues we talked about, priced for ten days, ready for your deck.</h2>
+    </div>
+    <div>
+      <div class="note body">
+        <p>You told us what didn't work last year: a location that couldn't drive foot traffic without heavy social, and a single open floor that meant building temporary rooms with your fabricator to satisfy permits. So every venue here is <strong>below Midtown</strong>, has <strong>at least two levels</strong>, and has <strong>rooms that are already separated</strong>, so the café, retail, kitchen and back-of-house can each have their own space.</p>
+        <p>To answer your question: <strong>both Manhattan venues start at street level.</strong> At Casa Panorama, the pop-up <em>is</em> the ground floor, a Broadway shop floor with the lower level beneath it. At Casa Luz, the event floors are the 2nd and 3rd, but Cocoon runs the whole building, so the experience starts at the front door. Guests arrive through a private street entrance and ground-floor lobby that can be fully branded, then go up in a private elevator.</p>
+        <p>We've placed <strong>soft holds</strong> across the last two weeks of April and the first two weeks of May. Casa Brutal is in Williamsburg rather than Manhattan, but it sits in one of the busiest, best-looking streetscapes in Brooklyn, so we've included it for the walkthrough. We're also sourcing <strong>more Manhattan options, including around Midtown</strong>, and will share them as they're confirmed.</p>
+        <p>Whichever one you choose, a dedicated Cocoon on-site manager (Nafisa, who you'll meet at the walkthrough) is your contact for the full run, including load-in, permits and building logistics, and anything that comes up on the day.</p>
+        <div class="signature">— Eduard &amp; Andrés, Cocoon Flex Spaces</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE BRIEF -->
+<section class="full" id="brief">
+  <div class="inner">
+    <div class="superhead">The brief, as we understand it</div>
+    <h2 class="title" style="font-size: clamp(34px, 5vw, 60px); max-width: 1100px; margin-top: 18px;">The second year of a global pop-up for an international sports brand: a café, a retail store, a working kitchen, and ten days of programming in the part of New York that already has the foot traffic.</h2>
+  </div>
+  <div class="inner" style="margin-top: 48px;">
+    <div class="stat-grid">
+      <div class="stat"><div class="num">10</div><div class="label">Days on site<br/>load-in · live · load-out</div></div>
+      <div class="stat"><div class="num">~600</div><div class="label">Guests a day<br/>last year's average</div></div>
+      <div class="stat"><div class="num">350</div><div class="label">Guests at each<br/>opening + closing party</div></div>
+      <div class="stat"><div class="num">2+</div><div class="label">Levels needed<br/>front-of-house + BOH</div></div>
+    </div>
+  </div>
+  <div class="inner" style="margin-top: 56px;">
+    <div class="two-col balanced">
+      <div>
+        <div class="eyebrow">What the pop-up is doing</div>
+        <p class="body" style="color:var(--ink-soft); margin:0;">A café selling ticketed goods, a retail store selling clothing, and a kitchen hosting private lunches and dinners (closed, ticketed catering with no raw food). Around those, a daily programme with partners: an F1 gaming section, run clubs, brunches, startup and investor talks, and a comedy night. Private opening and closing parties for around 350 guests with DJs and check-in.</p>
+      </div>
+      <div>
+        <div class="eyebrow">What the venue needs to deliver</div>
+        <p class="body" style="color:var(--ink-soft); margin:0;">A blank canvas your fabricator and AV team can transform. At least two levels, with a large back-of-house for the kitchen and retail stock. Rooms that are already separated, so you're not building walls to satisfy permits. Ground-floor access for load-in, if possible. SoHo or nearby, with real street traffic. And a rooftop for a day or two, for yoga or a run-club moment.</p>
+      </div>
+    </div>
+    <div class="expansion" style="margin-top: 40px;">
+      <div class="tag">Included with every venue in this deck</div>
+      <p style="font-size:15px;">A dedicated Cocoon on-site manager for every booked hour, cleaning between live days, a complimentary walkthrough and tech scout with your fabricator and AV team, and help with building approvals, COIs and permits. All figures below are venue-only and all-in, plus processing fees. <strong>Blank canvas:</strong> at every venue, Cocoon handles removing any furniture, art or fixtures for your dates. This is an additional fee, which we'll quote once we know what needs to move.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section id="compare">
+  <div class="superhead">At a glance</div>
+  <h2 class="headline" style="margin-top:14px; max-width: 940px;">Three venues to walk first, each priced for ten days at 12 hours a day. More options are on the way.</h2>
+  <div class="compare three">
+    <article class="ccard">
+      <div class="photo"><img src="img/panorama/ground-03.jpg" alt="Casa Panorama — ground floor, looking down the Broadway frontage" /><span class="floor-tag">Casa Panorama · ground floor</span></div>
+      <div class="body">
+        <div class="where">A · Tribeca / SoHo · 401 Broadway at Walker St</div>
+        <h3>Casa Panorama</h3>
+        <ul>
+          <li>3,682 sq ft street-level shop floor with seven oversized windows on Broadway</li>
+          <li>3,482 sq ft lower level for back-of-house, stock and kitchen operations</li>
+          <li>27th-floor lounge + 360° rooftop, available by the day</li>
+          <li>The building recently hosted eBay's Fashion Week activation</li>
+        </ul>
+        <div class="prices">
+          <div><div class="k">Ground + lower · 10 days</div><div class="v">$193.3K</div><div class="n">≈ $19.3K / day</div></div>
+          <div><div class="k">Add-on · 27th fl. + rooftop</div><div class="v">$9,360</div><div class="n">per day, only the days you need</div></div>
+        </div>
+        <a href="#panorama" class="cta-pill" style="align-self: flex-start;">See Casa Panorama ↓</a>
+      </div>
+    </article>
+    <article class="ccard">
+      <div class="photo"><img src="img/luz/ballroom-01.jpg" alt="Casa Luz — 2nd-floor ballroom, empty" /><span class="floor-tag">Casa Luz · 2nd floor</span></div>
+      <div class="body">
+        <div class="where">B · SoHo · 45 Howard Street</div>
+        <h3>Casa Luz</h3>
+        <ul>
+          <li>1910 cast-iron building that Cocoon runs in full, with a private street entrance and lobby</li>
+          <li>Event floors on the 2nd + 3rd, ~3,500 sq ft each · 15-ft ceilings</li>
+          <li>Private passenger elevator · ADA-compliant · a 4th floor is available</li>
+          <li>Branding on the façade and in the ground-floor lobby</li>
+        </ul>
+        <div class="prices one">
+          <div><div class="k">B · Two floors · 10 days</div><div class="v">$238.9K</div><div class="n">≈ $23.9K / day</div></div>
+        </div>
+        <a href="#luz" class="cta-pill" style="align-self: flex-start;">See Casa Luz ↓</a>
+      </div>
+    </article>
+    <article class="ccard">
+      <div class="photo"><img src="img/brutal/ground-01-gallery.jpg" alt="Casa Brutal — ground-floor gallery" /><span class="floor-tag">Casa Brutal · ground floor</span></div>
+      <div class="body">
+        <div class="where">C · Williamsburg · 333 Kent Avenue</div>
+        <h3>Casa Brutal</h3>
+        <ul>
+          <li>8,000+ sq ft: ground level + lower level + outdoor terrace, delivered empty</li>
+          <li>Street-level gallery with a long bar and garage-door load-in</li>
+          <li>Lower-level screening room and second gallery</li>
+          <li>Steps from Domino Park and the Williamsburg waterfront</li>
+        </ul>
+        <div class="prices one">
+          <div><div class="k">C · Ten days · all-in</div><div class="v">$303.6K</div><div class="n">≈ $30.4K / day</div></div>
+        </div>
+        <a href="#brutal" class="cta-pill" style="align-self: flex-start;">See Casa Brutal ↓</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =================== CASA PANORAMA =================== -->
+<section id="panorama" data-lightbox>
+  <div class="casa-header">
+    <div class="casa-num">A</div>
+    <div>
+      <div class="tag">Tribeca / SoHo border · 401 Broadway at Walker Street · Canal St subway</div>
+      <h2>Casa Panorama</h2>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <p class="lede">A Broadway shop floor at street level with seven huge windows, where SoHo meets Tribeca and a block from Canal Street. It's the most visible frontage in this deck, and it's built for walk-in traffic.</p>
+      <p class="body" style="color: var(--ink-soft);">The 3,682 sq ft ground floor comes to you as a raw, white box: concrete floors, columns and a long run of windows, so your fabricator starts from nothing. The 3,482 sq ft lower level below gives you a full floor of back-of-house for kitchen operations, retail stock and crew. On top of that, the building's 27th-floor lounge (with its own kitchen and bar) and the rooftop above it can be added <strong>by the day</strong>, for a private dinner, a rooftop yoga session or a run-club send-off, without paying for them across the whole run.</p>
+    </div>
+    <div>
+      <ul class="plan-list">
+        <li><span class="lvl">Ground</span><span>3,682 sq ft street-level floor · Broadway shop windows <span class="d">· café, retail, gaming, talks, parties</span></span></li>
+        <li><span class="lvl boh">Lower level</span><span>3,482 sq ft directly below <span class="d">· kitchen ops, retail stock, crew, BOH</span></span></li>
+        <li><span class="lvl">27th floor</span><span>Lounge, kitchen + bar, conference room, XR studio <span class="d">· add-on, by the day · private lunches + dinners, VIP</span></span></li>
+        <li><span class="lvl">Rooftop</span><span>360° Manhattan skyline terrace <span class="d">· add-on, by the day · yoga, run club, content</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area">
+    <div class="area-head"><div class="eyebrow">The neighbourhood · Broadway, SoHo / Tribeca</div><p>Casa Panorama sits on Broadway, New York's main shopping corridor, a short walk south of SoHo's flagship stores and at the edge of Tribeca.</p></div>
+    <div class="gallery area-grid four active" id="pano-area">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/soho-broadway-crowd.jpg" alt="Broadway, SoHo · weekend foot traffic" /><figcaption>Broadway, SoHo · weekend foot traffic</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/soho-broadway-uniqlo.jpg" alt="Broadway flagships, a few blocks north" /><figcaption>Broadway flagships, a few blocks north</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/soho-broadway-shoppers.jpg" alt="SoHo shoppers" /><figcaption>SoHo shoppers</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/tribeca-leonard.jpg" alt="Tribeca · a few blocks south" /><figcaption>Tribeca · a few blocks south</figcaption></figure>
+    </div>
+  </div>
+  <div class="facts">
+    <div><div class="k">Entry</div><div class="v">Street level on Broadway</div></div>
+    <div><div class="k">Load-in</div><div class="v">Freight entrance · 62 Walker St</div></div>
+    <div><div class="k">Size</div><div class="v">3,682 sq ft ground + 3,482 sq ft lower</div></div>
+    <div><div class="k">Track record</div><div class="v">eBay Fashion Week activation</div></div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Casa Panorama photos">
+    <button class="tab" role="tab" aria-selected="true" data-gallery="pano-ground">Ground floor</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="pano-27">27th floor · add-on</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="pano-roof">Rooftop · add-on</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="pano-plans">Floor plan</button>
+  </div>
+  <div class="gallery g3 active" id="pano-ground">
+    <p class="gallery-note" style="grid-column: 1 / -1;"><strong>Please note:</strong> these are working photos of the raw ground floor. We haven't shot it professionally yet, and seeing it in person on Thursday will give you a much better sense of its scale.</p>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/panorama/ground-03.jpg" alt="Ground floor · looking the length of the floor" /><figcaption>Ground floor · full length</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/panorama/ground-01.jpg" alt="Ground floor · Broadway shop windows" /><figcaption>Broadway shop windows</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/panorama/ground-02.jpg" alt="Ground floor · stair down to the lower level" /><figcaption>Stair to the lower level</figcaption></figure>
+  </div>
+  <div class="gallery" id="pano-27">
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/panorama/f27-01-lounge.jpg" alt="27th floor · lounge" /><figcaption>27th floor · lounge</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/panorama/f27-03-bar.jpg" alt="27th floor · kitchen + bar" /><figcaption>Kitchen + bar</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/panorama/f27-02-xr-lounge.jpg" alt="27th floor · XR studio + lounge" /><figcaption>XR studio + lounge</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/panorama/f27-04-lounge-view.jpg" alt="27th floor · lounge with skyline views" /><figcaption>Lounge · skyline views</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/panorama/f27-05-skyline.jpg" alt="27th floor · downtown views" /><figcaption>Downtown views</figcaption></figure>
+  </div>
+  <div class="gallery" id="pano-roof">
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/panorama/roof-01.jpg" alt="Rooftop · 360° skyline terrace" /><figcaption>Rooftop · 360° skyline</figcaption></figure>
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/panorama/roof-02-balcony.jpg" alt="Balcony · downtown and Brooklyn views" /><figcaption>Balcony</figcaption></figure>
+  </div>
+  <div class="gallery plans" id="pano-plans">
+    <p class="gallery-note" style="grid-column: 1 / -1;">We're preparing floor plans for the ground floor and lower level and will send them before the walkthrough. The 27th floor (add-on) is below.</p>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/plans/panorama-floor-27.jpg" alt="Casa Panorama · 27th floor plan" /><figcaption>27th floor plan</figcaption></figure>
+  </div>
+
+  <div class="two-col balanced" style="margin-top: 64px;">
+    <div>
+      <div class="eyebrow">Why it works for the pop-up</div>
+      <p class="body" style="color: var(--ink-soft); margin:0;">It fixes last year's problem head-on. The shop windows do the job social couldn't: people walking down Broadway see the pop-up without having to look for it. Street-level entry makes load-in and load-out straightforward, and puts the café and retail where walk-ins arrive. The lower level keeps the kitchen, stock and crew out of sight. And on the days it matters, the brand can go up to the 27th floor and roof for private dinners and partner moments.</p>
+    </div>
+    <div>
+      <div class="eyebrow">Notable features</div>
+      <ul style="margin:0; padding-left:18px; color: var(--ink-soft); line-height:1.7;">
+        <li>Seven oversized shop windows on Broadway, available for branding</li>
+        <li>Raw white box: concrete floors, columns, full-length windows</li>
+        <li>Dedicated freight entrance on Walker Street · 24-hour building with front desk</li>
+        <li>27th floor: kitchen, bar, lounge, conference room, XR studio (add-on)</li>
+        <li>Rooftop with 360° views, which we can book for just the days you need</li>
+        <li>eBay's Fashion Week activation was built in this building this season</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 72px;">
+    <div class="divider-label"><span class="text">Pricing · 10 days · 12 hrs/day</span><span class="line"></span><span></span></div>
+    <div class="walk aligned two" style="margin-top: 8px;">
+      <div class="step">
+        <div class="step-num">Option A · base booking</div>
+        <h4>Ground floor + lower level · 10 days</h4>
+        <p class="step-body">Exclusive use of the 3,682 sq ft street-level floor and the 3,482 sq ft floor below it for ten days. There's room for the café, retail, gaming, talks and parties upstairs, and the kitchen, stock and back-of-house below.</p>
+        <div class="step-price">$193,300<span class="sub">All-in · 10 days · + processing fees</span></div>
+        <div class="per-day">≈ $19,330 per day</div>
+      </div>
+      <div class="step">
+        <div class="step-num">Add-on · book by the day</div>
+        <h4>27th-floor lounge + rooftop</h4>
+        <p class="step-body">The 27th floor (lounge, kitchen and bar) and the 360° rooftop, added to your ground-floor booking only on the days you programme them: a private dinner, a partner lunch, rooftop yoga or a run-club send-off.</p>
+        <div class="addon-price">$9,360<span class="u">/ day</span></div>
+        <div class="per-day">12-hour day · added to the ground-floor booking</div>
+        <p class="small-ref">For reference: added across all ten days, the full building comes to $286,900 all-in.</p>
+      </div>
+    </div>
+    <p class="caption" style="margin-top: 20px; text-transform:none; letter-spacing:0; font-size:13px;">Venue-only and all-in: a dedicated Cocoon on-site manager for every booked hour and cleaning between days are included. Removing any furniture or art for your build (e.g. on the 27th floor) is handled by Cocoon for an additional fee, quoted on scope. Security, permits and production are not included (see <a href="#beyond">Beyond the venue</a>).</p>
+  </div>
+</section>
+
+<!-- =================== CASA LUZ =================== -->
+<section id="luz" data-lightbox>
+  <div class="casa-header">
+    <div class="casa-num">B</div>
+    <div>
+      <div class="tag">SoHo · 45 Howard Street · steps from Canal St · 2nd + 3rd floors</div>
+      <h2>Casa Luz</h2>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <p class="lede">A whole building in the middle of SoHo. It's a 1910 cast-iron loft that Cocoon runs in full, so the experience starts at the front door: a private street entrance and ground-floor lobby, then a private elevator up to two full event floors.</p>
+      <p class="body" style="color: var(--ink-soft);">The event spaces are the 2nd and 3rd floors, each about 3,500 sq ft, with 15-foot ceilings, cast-iron columns, exposed brick and big arched windows that bring in a lot of daylight. Because they're separate floors, you get separate rooms without building any. One floor can be the café and retail store, and the other the kitchen, private dining and back-of-house. With no other tenants, the street entrance, lobby and façade are yours to brand for the whole run. A 4th floor is also available if the programme grows.</p>
+    </div>
+    <div>
+      <ul class="plan-list">
+        <li><span class="lvl">Ground</span><span>Private street entrance + lobby · cast-iron façade <span class="d">· branded arrival, check-in</span></span></li>
+        <li><span class="lvl">Floor 2</span><span>Ballroom loft · arched windows · service pantry with dumbwaiter <span class="d">· café, retail, talks, parties</span></span></li>
+        <li><span class="lvl">Floor 3</span><span>Open loft · ~3,000 sq ft main room + side rooms <span class="d">· kitchen, private dining, gaming, BOH</span></span></li>
+        <li><span class="lvl boh">Floor 4</span><span>Additional loft floor <span class="d">· available as an add-on</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area">
+    <div class="area-head"><div class="eyebrow">The neighbourhood · SoHo</div><p>Howard Street sits in the heart of SoHo's cast-iron district, between Broadway, Lafayette and Canal, surrounded by flagship retail and some of the busiest pedestrian streets in the city.</p></div>
+    <div class="gallery area-grid four active" id="luz-area">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/soho-castiron.jpg" alt="SoHo cast-iron architecture" /><figcaption>SoHo cast-iron architecture</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/soho-street-long.jpg" alt="SoHo streets" /><figcaption>SoHo streets</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/soho-corner.jpg" alt="SoHo corner flagships" /><figcaption>SoHo corner flagships</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/soho-intersection.jpg" alt="Downtown foot traffic" /><figcaption>Downtown foot traffic</figcaption></figure>
+    </div>
+  </div>
+  <div class="facts">
+    <div><div class="k">Building</div><div class="v">1910 · Cocoon runs all of it</div></div>
+    <div><div class="k">Each floor</div><div class="v">~3,500 sq ft · 15-ft ceilings</div></div>
+    <div><div class="k">Access</div><div class="v">Private passenger elevator · ADA</div></div>
+    <div><div class="k">Arrival</div><div class="v">Ground-floor entrance + lobby</div></div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Casa Luz photos">
+    <button class="tab" role="tab" aria-selected="true" data-gallery="luz-rooms">Inside</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="luz-facade">Façade · street</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="luz-plans">Floor plans</button>
+  </div>
+  <div class="gallery active" id="luz-rooms">
+    <p class="gallery-note" style="grid-column: 1 / -1;">Some photos show the floors furnished. For the pop-up, Cocoon clears the floors so they're delivered empty for your build (removal is quoted on scope).</p>
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/luz/ballroom-01.jpg" alt="Ballroom · 2nd floor, empty" /><figcaption>Ballroom · empty</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/luz/ballroom-02-arch.jpg" alt="Ballroom · arched doorway" /><figcaption>Ballroom · arched doorway</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/luz/loft-01.jpg" alt="Loft floor · full length, as furnished" /><figcaption>Loft floor · full length</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/luz/loft-02-arches.jpg" alt="Loft floor · arched windows, as furnished" /><figcaption>Arched windows</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/luz/detail-brick.jpg" alt="Exposed brick detail" /><figcaption>Exposed brick</figcaption></figure>
+  </div>
+  <div class="gallery" id="luz-facade">
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/luz/facade-street.jpg" alt="Howard Street · cast-iron façade" /><figcaption>Howard Street</figcaption></figure>
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/luz/facade-castiron.jpg" alt="Cast-iron façade detail" /><figcaption>Cast-iron façade</figcaption></figure>
+  </div>
+  <div class="gallery plans" id="luz-plans">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/plans/luz-2nd-floor.jpg" alt="Casa Luz · 2nd floor (ballroom) plan" /><figcaption>2nd floor · ballroom</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/plans/luz-3rd-floor.jpg" alt="Casa Luz · 3rd floor plan" /><figcaption>3rd floor</figcaption></figure>
+  </div>
+  <p class="body" style="margin-top: 20px; font-size: 15px;"><a href="https://drive.google.com/file/d/17yMxMPvJevkfpVlKMF0sDtyv07biXS58/view?usp=sharing" target="_blank" rel="noopener">Watch the Casa Luz walkthrough video ↗</a></p>
+
+  <div class="two-col balanced" style="margin-top: 56px;">
+    <div>
+      <div class="eyebrow">Why it works for the pop-up</div>
+      <p class="body" style="color: var(--ink-soft); margin:0;">This is the SoHo address you asked for, and a building you have entirely to yourselves. Guests start at street level, through your branded entrance and lobby, and two separate floors solve the room-separation problem without a fabricator. Because there are no other tenants, the private elevator and stair are yours for load-in, deliveries and guest flow. The thing to plan for is that the main rooms are upstairs, so the street presence comes from the façade, the entrance and the lobby rather than a shop window, and larger builds load in by elevator.</p>
+    </div>
+    <div>
+      <div class="eyebrow">Notable features</div>
+      <ul style="margin:0; padding-left:18px; color: var(--ink-soft); line-height:1.7;">
+        <li>Whole building run by Cocoon · no outside neighbours</li>
+        <li>Private ground-floor entrance + lobby · 2nd + 3rd floors ~3,500 sq ft each</li>
+        <li>15-ft ceilings · cast-iron columns · exposed brick · arched windows</li>
+        <li>Private passenger elevator · ADA-compliant</li>
+        <li>Service pantry with dumbwaiter on the 2nd floor for catering staging</li>
+        <li>Street-level façade branding · steps from Canal St station</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 72px;">
+    <div class="divider-label"><span class="text">Pricing · 10 days · 12 hrs/day</span><span class="line"></span><span></span></div>
+    <div class="walk aligned two" style="margin-top: 8px;">
+      <div class="step">
+        <div class="step-num">Option B</div>
+        <h4>2nd + 3rd floors · with ground-floor entrance</h4>
+        <p class="step-body">Two full loft floors for ten days, plus the private street entrance, lobby and elevator. There's room for front-of-house on one floor and kitchen, private dining and back-of-house on the other.</p>
+        <div class="step-price">$238,900<span class="sub">All-in · 10 days · + processing fees</span></div>
+        <div class="per-day">≈ $23,890 per day</div>
+      </div>
+      <div class="step">
+        <div class="step-num">Add-on</div>
+        <h4>4th floor</h4>
+        <p class="step-body">If the programme needs more room, such as a dedicated gaming floor, a green room for talent or more stock space, we can add the 4th loft floor for some or all of the run.</p>
+        <div class="step-price" style="font-size:20px;">On request<span class="sub">Priced to the days you need</span></div>
+      </div>
+    </div>
+    <p class="caption" style="margin-top: 20px; text-transform:none; letter-spacing:0; font-size:13px;">Venue-only and all-in: a dedicated Cocoon on-site manager for every booked hour and cleaning between days are included. Clearing furniture from the floors is handled by Cocoon for an additional fee, quoted on scope. Security, permits and production are not included.</p>
+  </div>
+</section>
+
+<!-- =================== CASA BRUTAL =================== -->
+<section id="brutal" data-lightbox>
+  <div class="casa-header">
+    <div class="casa-num">C</div>
+    <div>
+      <div class="tag">Williamsburg, Brooklyn · 333 Kent Avenue · waterfront</div>
+      <h2>Casa Brutal <span class="wild">Williamsburg</span></h2>
+    </div>
+  </div>
+  <div class="two-col">
+    <div>
+      <p class="lede">A brutalist art centre on Kent Avenue, a block from Domino Park and in the middle of Williamsburg's busiest, best-looking streets. We know Manhattan is the priority, but it ticks almost every other box in the brief.</p>
+      <p class="body" style="color: var(--ink-soft);">More than 8,000 sq ft across a street-level gallery and a lower level, plus an outdoor terrace, delivered completely empty. The ground floor is a white-walled gallery with a long bar and its own garage door for load-in. Below it are a screening room and a second gallery. The two levels already work as separate rooms, so the café and retail can live upstairs while the kitchen, private dining, talks and comedy night go downstairs, with no temporary walls. Williamsburg's waterfront is where global sports, fashion and lifestyle brands increasingly choose to pop up.</p>
+    </div>
+    <div>
+      <ul class="plan-list">
+        <li><span class="lvl">Ground</span><span>Gallery + long bar · street-level entry · garage door <span class="d">· café, retail, parties</span></span></li>
+        <li><span class="lvl">Lower</span><span>Screening room + second gallery <span class="d">· talks, comedy night, F1 gaming, kitchen, BOH</span></span></li>
+        <li><span class="lvl">Outdoor</span><span>Terrace + planted garden <span class="d">· run-club meet-up, brunch overflow</span></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="area">
+    <div class="area-head"><div class="eyebrow">The neighbourhood · Williamsburg waterfront</div><p>Kent Avenue runs along the Williamsburg waterfront, a block from Domino Park and the restored Domino Sugar refinery, and in the middle of Brooklyn's liveliest streets for shops, cafés and weekend crowds.</p></div>
+    <div class="gallery area-grid active" id="brutal-area">
+    <figure class="photo tallcell" style="margin:0"><img loading="lazy" src="img/area/wburg-domino-sign.jpg" alt="The Domino Sugar sign · a block away" /><figcaption>The Domino Sugar sign · a block away</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/wburg-waterfront-park.jpg" alt="Williamsburg waterfront" /><figcaption>Williamsburg waterfront</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/wburg-bridge-domino.jpg" alt="Williamsburg Bridge + Domino" /><figcaption>Williamsburg Bridge + Domino</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/wburg-street.jpg" alt="Williamsburg streets" /><figcaption>Williamsburg streets</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/area/wburg-bridge-sunset.jpg" alt="Sunset over the East River" /><figcaption>Sunset over the East River</figcaption></figure>
+    </div>
+  </div>
+  <div class="facts">
+    <div><div class="k">Entry</div><div class="v">Street level · ramp access</div></div>
+    <div><div class="k">Load-in</div><div class="v">Garage door + private entrance</div></div>
+    <div><div class="k">Access</div><div class="v">Passenger elevator · ADA</div></div>
+    <div><div class="k">Size</div><div class="v">8,000+ sq ft + outdoor terrace</div></div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Casa Brutal photos">
+    <button class="tab" role="tab" aria-selected="true" data-gallery="brutal-ground">Ground floor</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="brutal-other">Lower level</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="brutal-out">Exterior + garden</button>
+    <button class="tab" role="tab" aria-selected="false" data-gallery="brutal-plans">Floor plans</button>
+  </div>
+  <div class="gallery active" id="brutal-ground">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/brutal/ground-01-gallery.jpg" alt="Ground floor · gallery" /><figcaption>Ground floor · gallery</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/brutal/ground-02-bar.jpg" alt="Ground floor · long bar" /><figcaption>Long bar</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/brutal/ground-03-stair.jpg" alt="Ground floor · stair and gallery" /><figcaption>Stair + gallery</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/brutal/staircase.jpg" alt="Architectural staircase" /><figcaption>Staircase</figcaption></figure>
+  </div>
+  <div class="gallery" id="brutal-other">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/brutal/lower-01-screening.jpg" alt="Lower level · screening room" /><figcaption>Lower level · screening room</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/brutal/lower-02-gallery.jpg" alt="Lower level · gallery" /><figcaption>Lower level · gallery</figcaption></figure>
+  </div>
+  <div class="gallery" id="brutal-out">
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/brutal/facade.jpg" alt="Brick façade · street corner with ramp access" /><figcaption>Façade · Kent Avenue</figcaption></figure>
+    <figure class="photo feature" style="margin:0"><img loading="lazy" src="img/brutal/garden.jpg" alt="Sculpture garden" /><figcaption>Sculpture garden</figcaption></figure>
+  </div>
+  <div class="gallery plans" id="brutal-plans">
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/plans/brutal-2.jpg" alt="Casa Brutal · ground floor plan" /><figcaption>Ground floor</figcaption></figure>
+    <figure class="photo" style="margin:0"><img loading="lazy" src="img/plans/brutal-1.jpg" alt="Casa Brutal · lower level (cellar) plan" /><figcaption>Lower level</figcaption></figure>
+  </div>
+
+  <div class="two-col balanced" style="margin-top: 64px;">
+    <div>
+      <div class="eyebrow">Why it works for the pop-up</div>
+      <p class="body" style="color: var(--ink-soft); margin:0;">It combines street-level access, two separated levels and outdoor space in one building, and the architecture reads as considered rather than sporty. The neighbourhood does a lot of the work: Kent and Wythe Avenues, Domino Park and the waterfront draw a steady weekend crowd, and a run club along the East River practically programmes itself. The trade-off is that it isn't Manhattan, so it's the one to weigh against how much of the traffic the brand wants from the street versus from its own community.</p>
+    </div>
+    <div>
+      <div class="eyebrow">Notable features</div>
+      <ul style="margin:0; padding-left:18px; color: var(--ink-soft); line-height:1.7;">
+        <li>8,000+ sq ft across two levels + outdoor terrace</li>
+        <li>Street-level gallery with a built-in long bar</li>
+        <li>Lower-level screening room with projection</li>
+        <li>Garage-door load-in · passenger elevator · ADA ramp</li>
+        <li>Delivered completely empty · true blank canvas</li>
+        <li>A block from Domino Park · about 20 minutes from SoHo</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 72px;">
+    <div class="divider-label"><span class="text">Pricing · 10 days</span><span class="line"></span><span></span></div>
+    <div class="walk aligned two" style="margin-top: 8px;">
+      <div class="step">
+        <div class="step-num">Option C</div>
+        <h4>Ground level + lower level + terrace · 10 days</h4>
+        <p class="step-body">Exclusive use of the whole venue for ten days, delivered empty: the street-level gallery with bar, the lower-level screening room and gallery, and the outdoor terrace.</p>
+        <div class="step-price">$303,600<span class="sub">All-in · 10 days · + processing fees</span></div>
+        <div class="per-day">≈ $30,360 per day</div>
+      </div>
+      <div class="step">
+        <div class="step-num">See it first</div>
+        <h4>Walkthrough video</h4>
+        <p class="step-body">A floor-by-floor video so your team can get a feel for both levels before deciding whether to add it to the site visit.</p>
+        <a href="https://drive.google.com/file/d/1oIm1z2PwsDOiEPWBls7cDW6lF44q0WZp/view?usp=sharing" target="_blank" rel="noopener" class="cta-pill" style="align-self:flex-start; margin-top:auto;">Watch the walkthrough ↗</a>
+      </div>
+    </div>
+    <p class="caption" style="margin-top: 20px; text-transform:none; letter-spacing:0; font-size:13px;">Venue-only and all-in: a dedicated Cocoon on-site manager for every booked hour and cleaning between days are included. Security, permits and production are not included.</p>
+  </div>
+</section>
+
+<!-- =================== FIT MATRIX =================== -->
+<section id="fit">
+  <div class="superhead">Your brief, venue by venue</div>
+  <h2 class="headline" style="margin-top:14px; max-width: 940px;">What you told us on the call, and how each venue answers it.</h2>
+  <div class="matrix-wrap">
+    <table class="matrix">
+      <thead><tr><th>What you need</th><th>A · Casa Panorama</th><th>B · Casa Luz</th><th>C · Casa Brutal</th></tr></thead>
+      <tbody>
+        <tr><th><span class="n">01</span>Location with foot traffic</th>
+          <td data-casa="Casa Panorama"><span class="req yes">Yes</span>Broadway at Walker, one block below SoHo, with shop windows on the street.</td>
+          <td data-casa="Casa Luz"><span class="req yes">Yes</span>Howard Street, SoHo. Street presence through the branded façade, entrance and lobby.</td>
+          <td data-casa="Casa Brutal"><span class="req part">Brooklyn</span>A busy Williamsburg waterfront block near Domino Park. Not Manhattan.</td></tr>
+        <tr><th><span class="n">02</span>Two or more levels</th>
+          <td data-casa="Casa Panorama"><span class="req yes">Yes</span>Ground + lower level, plus the 27th floor + rooftop by the day.</td>
+          <td data-casa="Casa Luz"><span class="req yes">Yes</span>2nd + 3rd floors, plus the ground-floor lobby, with a 4th available.</td>
+          <td data-casa="Casa Brutal"><span class="req yes">Yes</span>Ground + lower level + outdoor terrace.</td></tr>
+        <tr><th><span class="n">03</span>Rooms already separated</th>
+          <td data-casa="Casa Panorama"><span class="req yes">Yes</span>Separate floors for front-of-house, BOH and private dining. The ground floor itself is open plan.</td>
+          <td data-casa="Casa Luz"><span class="req yes">Yes</span>Each floor is its own space, and the 3rd floor has side rooms.</td>
+          <td data-casa="Casa Brutal"><span class="req yes">Yes</span>Each level is a separate gallery, plus a screening room.</td></tr>
+        <tr><th><span class="n">04</span>Starts at street level</th>
+          <td data-casa="Casa Panorama"><span class="req yes">Yes</span>The pop-up is the ground floor, with a freight entrance on Walker Street.</td>
+          <td data-casa="Casa Luz"><span class="req yes">Yes</span>Private street entrance + lobby, then a private elevator to the event floors.</td>
+          <td data-casa="Casa Brutal"><span class="req yes">Yes</span>Street-level gallery with a garage door.</td></tr>
+        <tr><th><span class="n">05</span>Kitchen + retail stock (BOH)</th>
+          <td data-casa="Casa Panorama"><span class="req yes">Yes</span>A full lower level for BOH, and a kitchen + bar on the 27th floor (add-on).</td>
+          <td data-casa="Casa Luz"><span class="req tbc">To confirm</span>Service pantry with dumbwaiter. Kitchen set-up to be confirmed at the walkthrough.</td>
+          <td data-casa="Casa Brutal"><span class="req tbc">To confirm</span>Long bar on the ground floor. Kitchen set-up to be confirmed.</td></tr>
+        <tr><th><span class="n">06</span>Rooftop / outdoor</th>
+          <td data-casa="Casa Panorama"><span class="req yes">Yes</span>360° rooftop, booked for just the days you need.</td>
+          <td data-casa="Casa Luz"><span class="req tbc">No</span>No rooftop in this option.</td>
+          <td data-casa="Casa Brutal"><span class="req yes">Yes</span>Outdoor terrace + planted garden.</td></tr>
+        <tr><th><span class="n">07</span>Branding on the building</th>
+          <td data-casa="Casa Panorama"><span class="req yes">Yes</span>Seven oversized shop windows on Broadway.</td>
+          <td data-casa="Casa Luz"><span class="req yes">Yes</span>Façade + ground-floor lobby.</td>
+          <td data-casa="Casa Brutal"><span class="req tbc">To confirm</span>Brick façade on Kent Ave, subject to building approval.</td></tr>
+        <tr><th><span class="n">08</span>Price</th>
+          <td data-casa="Casa Panorama"><strong>$193,300</strong> for 10 days · 27th + rooftop <strong>$9,360/day</strong> as needed</td>
+          <td data-casa="Casa Luz"><strong>$238,900</strong></td>
+          <td data-casa="Casa Brutal"><strong>$303,600</strong> for 10 days</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="budget-note">
+    <p><strong>On budget.</strong> You mentioned about $15,000 a day. For a full ten days, Casa Panorama comes to about $19.3K a day, Casa Luz about $23.9K and Casa Brutal about $30.4K. We want to find a version that works for the brand, and there are three ways to get there:</p>
+    <p>— <strong>Shorter hours on load-in and load-out days</strong>, when you don't need 12 hours of public-ready space.<br/>
+       — <strong>The 27th floor and rooftop only on programmed days</strong> at Casa Panorama, at $9,360 per day, rather than all ten.<br/>
+       — <strong>Booking early.</strong> April and May are peak activation season in New York, and committing to dates in the next few weeks gives us the most room to negotiate with the building.</p>
+    <p>Tell us which venue your client leans toward, and we'll model these options against it within 24 hours.</p>
+  </div>
+</section>
+
+<!-- =================== BEYOND THE VENUE =================== -->
+<section class="full" id="beyond">
+  <div class="callout teal">
+    <div class="inner">
+      <div class="superhead" style="color: rgba(255,255,255,0.9);">Beyond the venue · one point of contact</div>
+      <h2 class="title" style="color: #FFF; margin-top: 18px; max-width: 1100px; font-size: clamp(30px, 4vw, 52px);">Security and door staff, permits, catering for the private dinners, and furniture strike and storage are all available through Cocoon.</h2>
+      <p class="lede" style="margin-top: 24px; max-width: 760px;">The numbers above are for the venue only. Your fabricator and AV team work with us from the tech scout onward. Let us know which of these you'd like us to handle, and we'll come back with options from vendors who already know these buildings.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== NEXT STEPS =================== -->
+<section class="full">
+  <div class="callout" style="background: var(--ink); color: var(--cream);">
+    <div class="inner">
+      <div class="superhead" style="color: var(--terracotta);">Next steps</div>
+      <h2 class="title" style="color: var(--cream); margin-top: 18px; max-width: 980px; font-size: clamp(34px, 5vw, 64px);">Walk the spaces, choose a direction, and we'll lock in the dates.</h2>
+    </div>
+    <div class="inner" style="margin-top: 48px;">
+      <div class="walk">
+        <div class="step"><div class="step-num" style="color: var(--terracotta);">01</div><h4 style="color: var(--cream);">Walkthrough</h4><p style="color: rgba(245,242,232,0.78);">Eduard and Nafisa will take you, Lucas and the team through the venues on Thursday afternoon. Bring your fabricator or AV lead if you can. It's the best time to check load-in, power, room layout and what needs clearing. We'll share any new options before then.</p></div>
+        <div class="step"><div class="step-num" style="color: var(--terracotta);">02</div><h4 style="color: var(--cream);">Dates + NDA</h4><p style="color: rgba(245,242,232,0.78);">Soft holds are in place across late April and early May. As soon as you have a ten-day block, we'll narrow them. If the brand can be shared with the building under an NDA, it speeds up approvals for branding and permits.</p></div>
+        <div class="step"><div class="step-num" style="color: var(--terracotta);">03</div><h4 style="color: var(--cream);">Budget calibration</h4><p style="color: rgba(245,242,232,0.78);">Tell us which venue and which option your client prefers, and we'll model the options above against it, so you have one clear number to take to the brand.</p></div>
+      </div>
+    </div>
+    <div class="inner" style="margin-top: 56px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <a href="mailto:eduard@cocoonflexspaces.com?cc=andres@cocoonflexspaces.com&amp;subject=ReflexGroup%20NYC%20pop-up%20%E2%80%94%20venue%20options" class="cta-pill terracotta">Reply to Eduard &amp; Andrés →</a>
+      <a href="tel:+19173983938" class="cta-pill" style="background: transparent; border: 1px solid rgba(245,242,232,0.4);">Call (917) 398-3938</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="inner">
+    <div>
+      <div class="sig">Eduard Monteagudo · Andrés Tovar · Cocoon Flex Spaces</div>
+      <div class="meta" style="margin-top: 6px;">eduard@cocoonflexspaces.com · andres@cocoonflexspaces.com · (917) 398-3938</div>
+    </div>
+    <div class="meta" style="text-align: right;">
+      <div>Prepared for Jade Saad · Lucas Villett · ReflexGroup</div>
+      <div style="margin-top: 4px;">Confidential · figures are estimates, subject to final dates and availability</div>
+      <div style="margin-top: 4px;">Neighbourhood photography via Unsplash</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Gallery tabs
+  document.querySelectorAll('.tabs').forEach(function (bar) {
+    var tabs = bar.querySelectorAll('.tab');
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        tabs.forEach(function (x) {
+          x.setAttribute('aria-selected', x === t ? 'true' : 'false');
+          var g = document.getElementById(x.dataset.gallery);
+          if (g) g.classList.toggle('active', x === t);
+        });
+      });
+    });
+  });
+  // Option A/B toggles
+  document.querySelectorAll('.opt-toggle').forEach(function (tg) {
+    var scope = tg.dataset.scope;
+    tg.querySelectorAll('button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        tg.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        document.querySelectorAll('.opt-panel[data-scope="' + scope + '"]').forEach(function (p) {
+          p.classList.toggle('active', p.dataset.opt === b.dataset.opt);
+        });
+      });
+    });
+  });
+  // Lightbox with prev/next within the visible gallery
+  var lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = '<button type="button" class="lightbox-close" aria-label="Close">×</button>' +
+    '<button type="button" class="lightbox-nav prev" aria-label="Previous">‹</button>' +
+    '<img src="" alt="" /><button type="button" class="lightbox-nav next" aria-label="Next">›</button>' +
+    '<div class="lightbox-caption"></div>';
+  document.body.appendChild(lb);
+  var img = lb.querySelector('img'), cap = lb.querySelector('.lightbox-caption');
+  var list = [], idx = 0;
+  function show(i) {
+    idx = (i + list.length) % list.length;
+    var el = list[idx];
+    img.src = el.dataset.full || el.src; img.alt = el.alt; cap.textContent = el.alt;
+  }
+  function open(el) {
+    var gal = el.closest('.gallery') || el.closest('section');
+    list = Array.prototype.slice.call(gal.querySelectorAll('.photo img'));
+    show(list.indexOf(el));
+    lb.classList.add('open'); document.body.style.overflow = 'hidden';
+  }
+  function close() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+  document.querySelectorAll('section[data-lightbox] .gallery .photo img').forEach(function (el) {
+    el.parentElement.addEventListener('click', function () { open(el); });
+  });
+  lb.querySelector('.prev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+  lb.querySelector('.next').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+  lb.querySelector('.lightbox-close').addEventListener('click', close);
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowRight') show(idx + 1);
+    if (e.key === 'ArrowLeft') show(idx - 1);
+  });
+})();
+</script>
+</body></html>

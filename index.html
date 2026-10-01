@@ -964,6 +964,22 @@
   .addon-price { font-size: 44px; font-weight:700; color: var(--terracotta); letter-spacing:-0.02em; line-height:1; margin-top:auto; }
   .addon-price .u { font-size: 16px; font-weight:600; color: var(--ink-soft); letter-spacing:0; margin-left:4px; }
   .walk .step p.small-ref, .small-ref { font-size:12px; color: var(--ink-mute); margin-top:12px; line-height:1.5; }
+  .pdf-btn { display:inline-flex; align-items:center; gap:8px; }
+  .topbar-actions { display:flex; align-items:center; gap:16px; }
+  .topbar-actions .cta-pill { padding: 9px 16px; font-size: 11px; }
+  @media (max-width: 700px) { .topbar-actions .cta-pill { padding: 8px 12px; font-size: 10px; } }
+  @media print {
+    @page { size: A4 landscape; margin: 10mm; }
+    html, body { background: #F5F2E8 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .topbar, .tabs, .no-print, .lightbox, .cta-pill { display: none !important; }
+    .gallery { display: grid !important; margin-top: 14px; }
+    .gallery::before { display:none; }
+    section { padding-top: 28px !important; padding-bottom: 28px !important; }
+    .cover-grid { min-height: 0 !important; }
+    .photo, .ccard, .step, .facts, .area, .matrix tr, .budget-note, .note, .walk, .gallery { break-inside: avoid; page-break-inside: avoid; }
+    #panorama, #luz, #brutal, #fit, #compare { break-before: page; page-break-before: always; }
+    .photo img { transform: none !important; }
+  }
   .budget-note { background:#FFF; border-left:3px solid var(--teal); padding:28px 32px; margin-top:40px; font-size:16px; line-height:1.6; }
   .budget-note p { margin:0 0 12px; } .budget-note p:last-child { margin:0; }
 </style>
@@ -979,7 +995,7 @@
       <span class="divider" aria-hidden="true"></span>
       <span class="partner">ReflexGroup <span style="color: var(--ink-soft); font-weight: 400;">· NYC brand pop-up</span></span>
     </div>
-    <div class="topbar-meta">Venue options · 10 days · April–May 2027</div>
+    <div class="topbar-actions"><div class="topbar-meta">Venue options · 10 days · April–May 2027</div><a href="Cocoon-ReflexGroup-NYC-Venue-Options.pdf" download class="cta-pill terracotta pdf-btn">Download PDF ↓</a></div>
   </div>
 </header>
 
@@ -997,6 +1013,7 @@
         <div style="display:flex; gap: 12px; flex-wrap: wrap; margin-top: 28px;">
           <a href="#compare" class="cta-pill terracotta">Compare the three ↓</a>
           <a href="#fit" class="cta-pill">How each fits your brief</a>
+          <a href="Cocoon-ReflexGroup-NYC-Venue-Options.pdf" download class="cta-pill pdf-btn" style="background:transparent; color:var(--ink); border:1px solid var(--ink);">Download PDF ↓</a>
         </div>
       </div>
       <div class="cover-meta">
@@ -1522,6 +1539,7 @@
     <div class="inner" style="margin-top: 56px; display: flex; gap: 16px; flex-wrap: wrap;">
       <a href="mailto:eduard@cocoonflexspaces.com?cc=andres@cocoonflexspaces.com&amp;subject=ReflexGroup%20NYC%20pop-up%20%E2%80%94%20venue%20options" class="cta-pill terracotta">Reply to Eduard &amp; Andrés →</a>
       <a href="tel:+19173983938" class="cta-pill" style="background: transparent; border: 1px solid rgba(245,242,232,0.4);">Call (917) 398-3938</a>
+      <a href="Cocoon-ReflexGroup-NYC-Venue-Options.pdf" download class="cta-pill pdf-btn" style="background: var(--cream); color: var(--ink);">Download PDF ↓</a>
     </div>
   </div>
 </section>
@@ -1601,6 +1619,21 @@
     if (e.key === 'Escape') close();
     if (e.key === 'ArrowRight') show(idx + 1);
     if (e.key === 'ArrowLeft') show(idx - 1);
+  });
+})();
+</script>
+<script>
+(function () {
+  var dl = null;
+  try { if (window.claude && typeof window.claude.use === 'function') { window.claude.use('downloads').then(function (d) { dl = d; }).catch(function () {}); } } catch (e) {}
+  document.querySelectorAll('a.pdf-btn').forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      if (!dl) return; // normal browsers: plain download link
+      ev.preventDefault();
+      fetch(a.getAttribute('href')).then(function (r) { return r.blob(); }).then(function (blob) {
+        return dl.save({ filename: 'Cocoon-ReflexGroup-NYC-Venue-Options.pdf', data: blob });
+      }).catch(function (err) { if (!err || err.code !== 'declined') { window.open(a.href, '_blank'); } });
+    });
   });
 })();
 </script>
